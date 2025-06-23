@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.icon {
+  font-size: 1.6rem;
+  color: #6366f1;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.tool-box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+.password-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #f9fafb;
+}
+
+.password-display input {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px 0 0 10px;
+  background: transparent;
+  outline: none;
+}
+
+.password-display button {
+  padding: 14px;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.password-display button:hover {
+  background: #c7d2fe;
+}
+
+.settings {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.settings label {
+  display: block;
+  margin: 8px 0;
+}
+
+.settings input[type="range"] {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.generate-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.generate-btn:hover {
+  background: #4f46e5;
+}
+
+.strength-meter label {
+  font-weight: 500;
+}
+
+#strengthBar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#strengthBar .bar-fill {
+  height: 100%;
+  width: 0%;
+  background: #e5e7eb;
+  border-radius: 8px;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+#strengthLabel {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.suggestions {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.suggestions label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#suggestionList {
+  margin-top: 5px;
+  padding-left: 20px;
+  color: #ef4444;
+}

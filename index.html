@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Tool – IT Leadz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1><span class="icon">🔐</span> Password Tool</h1>
+    <p class="subtitle">Generate secure passwords and check their strength – Powered by IT Leadz</p>
+
+    <div class="tool-box">
+      <div class="password-display">
+        <input type="text" id="password" placeholder="Click generate or type here..." oninput="evaluateStrength(this.value)" />
+        <button onclick="copyPassword()" title="Copy">📋</button>
+      </div>
+
+      <div class="settings">
+        <label>Password Length:</label>
+        <input type="range" id="length" min="6" max="32" value="16" oninput="updateLengthLabel()" />
+        <span id="lengthValue">16</span>
+
+        <label><input type="checkbox" id="includeUppercase" checked /> Include Uppercase</label>
+        <label><input type="checkbox" id="includeNumbers" checked /> Include Numbers</label>
+        <label><input type="checkbox" id="includeSymbols" checked /> Include Symbols</label>
+      </div>
+
+      <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+
+      <div class="strength-meter">
+        <label>Password Strength:</label>
+        <div id="strengthBar"><div class="bar-fill"></div></div>
+        <span id="strengthLabel">—</span>
+      </div>
+
+      <div class="suggestions">
+        <label>Suggestions:</label>
+        <ul id="suggestionList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
