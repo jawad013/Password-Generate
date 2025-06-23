@@ -8,35 +8,47 @@ body {
   font-family: 'Inter', sans-serif;
   background: #f9fafb;
   color: #1f2937;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
+  padding: 0;
 }
 
-.container {
-  max-width: 600px;
+/* 🔷 Full-width Header Section */
+.header-section {
   width: 100%;
+  background-color: #1C75BC;
+  color: #fff;
+  padding: 50px 20px;
   text-align: center;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin-bottom: 6px;
-}
-
-.icon {
-  font-size: 1.6rem;
-  color: #6366f1;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
-.subtitle {
-  color: #6b7280;
-  font-size: 1rem;
   margin-bottom: 30px;
 }
 
+.header-section h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header-section .icon {
+  font-size: 2rem;
+  color: #fff;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.header-section .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #e0f2fe;
+}
+
+/* 🧰 Canvas Container */
+.container {
+  max-width: 700px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* 📦 Tool Box */
 .tool-box {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -45,6 +57,7 @@ h1 {
   box-shadow: 0 8px 24px rgba(0,0,0,0.04);
 }
 
+/* 🔐 Password Display */
 .password-display {
   display: flex;
   justify-content: space-between;
@@ -63,6 +76,7 @@ h1 {
   border-radius: 10px 0 0 10px;
   background: transparent;
   outline: none;
+  color: #1f2937;
 }
 
 .password-display button {
@@ -80,6 +94,7 @@ h1 {
   background: #c7d2fe;
 }
 
+/* ⚙️ Settings Section */
 .settings {
   text-align: left;
   margin-bottom: 20px;
@@ -96,6 +111,7 @@ h1 {
   margin: 8px 0;
 }
 
+/* 🎲 Generate Button */
 .generate-btn {
   background: #6366f1;
   color: white;
@@ -112,6 +128,7 @@ h1 {
   background: #4f46e5;
 }
 
+/* 📊 Strength Meter */
 .strength-meter label {
   font-weight: 500;
 }
@@ -140,6 +157,7 @@ h1 {
   margin-bottom: 10px;
 }
 
+/* 💡 Suggestions */
 .suggestions {
   text-align: left;
   margin-top: 15px;

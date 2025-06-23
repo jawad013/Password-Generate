@@ -8,10 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1><span class="icon">🔐</span> Password Tool</h1>
-    <p class="subtitle">Generate secure passwords and check their strength – Powered by IT Leadz</p>
 
+  <!-- 🔵 Full-width Header -->
+  <div class="header-section">
+    <h1><span class="icon">🔐</span> Password Tool</h1>
+    <p class="subtitle">Generate secure passwords and check their strength – Powered by <strong>IT Leadz</strong></p>
+  </div>
+
+  <!-- 🧰 Tool Content Area -->
+  <div class="container">
     <div class="tool-box">
       <div class="password-display">
         <input type="text" id="password" placeholder="Click generate or type here..." oninput="evaluateStrength(this.value)" />
